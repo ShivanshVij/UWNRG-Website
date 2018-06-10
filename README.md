@@ -1,4 +1,4 @@
-# uwnrg-website
+# UW Nanorobotics Group 
 
 > The Website for The University of Waterloo's Nanaorobotics Group
 
