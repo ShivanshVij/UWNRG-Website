@@ -14,7 +14,7 @@ const router = new Router({
     {
       path: "/team",
       name: "Team Page",
-      component: homepage
+      component: teampage
     },
     {
       path: "/*",

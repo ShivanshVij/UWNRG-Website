@@ -1,17 +1,31 @@
 <template>
   <div class="meettheteam">
       <navbar></navbar>
-      <div class="columns is-desktop is-gapless" style="content-align: center; background-color: rgba(0, 0, 0, 0.7);">
-        <img class="background" src="@/assets/nrg_bg.jpg">
-        <div class="column" style="">
-          <img class="shield" src="@/assets/waterloo-shield.svg">
-          <img class="logo" src="@/assets/logo.png">
-        </div>
-        <p class="introduction">We are an undergraduate student team that explores technological marvels at the micro-scale. By encouraging collaboration amongst undergraduate students, professors, and professionals, we generate novel ideas that showcase the ingenuity of microrobotics.</p>
-      </div>
-      <div class="columns is-desktop is-gapless" style="position: absolute; top: 100%; width: 100%; height: 100%;">
-        <div class="column" style="background: white; width: 100%;">
-          <p> TEST </p>
+      <div class="columns is-desktop is-gapless" style="content-align: center; background-color: rgba(255, 255, 255, 0.7);">
+        <div class="column" style="margin-top:80px;">
+        <p style="color: black;"> Meet the Team</p>
+          <v-layout>
+    <v-flex xs12 sm6 offset-sm3>
+      <v-card>
+        <v-img
+          src="@/assets/ShivanshVij.jpg"
+          aspect-ratio="2.75"
+        ></v-img>
+
+        <v-card-title primary-title>
+          <div>
+            <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
+            <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
+          </div>
+        </v-card-title>
+
+        <v-card-actions>
+          <v-btn flat color="orange">Share</v-btn>
+          <v-btn flat color="orange">Explore</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-flex>
+  </v-layout>
         </div>
       </div>
   </div>
@@ -26,7 +40,8 @@ export default {
   name: "meettheteam",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      msg: "Welcome to Your Vue.js App",
+      image1: "@/assets/ShivanshVij.jpg"
     };
   }
 };

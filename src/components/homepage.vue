@@ -9,15 +9,29 @@
         </div>
         <p class="introduction">We are an undergraduate student team that explores technological marvels at the micro-scale. By encouraging collaboration amongst undergraduate students, professors, and professionals, we generate novel ideas that showcase the ingenuity of microrobotics.</p>
       </div>
-      <div class="columns is-desktop is-gapless" style="position: absolute; top: 100%; width: 100%; height: 100%;">
+      <div class="columns is-desktop is-gapless" style="position: absolute; top: 100%; width: 100%;">
         <div class="column" style="background: white; width: 100%;">
-          <p> TEST </p>
+          <v-footer dark height="auto">
+            <v-card class="flex" flat tile>
+              <v-card-actions class="black">
+
+                <v-btn v-for="icon in icons" :key="icon" class="mx-3" dark icon>
+                  <v-icon size="24px">{{ icon }}</v-icon>
+                </v-btn>
+                <v-divider></v-divider>
+                <strong style="margin-left: 15px; color: white;margin-right: 16px;">&copy;2018 — University of Waterloo Nanorobotics Group</strong>
+              </v-card-actions>
+            </v-card>
+          </v-footer>
         </div>
       </div>
+    
   </div>
+  
 </template>
 
 <script>
+import 'vuetify/dist/vuetify.min.css';
 import navbar from "./navbar.vue";
 export default {
   components: {
@@ -26,7 +40,14 @@ export default {
   name: "homepage",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      msg: "UWNRG Website Home Page",
+      icons: [
+        'fab fa-facebook',
+        'fab fa-twitter',
+        'fab fa-google-plus',
+        'fab fa-linkedin',
+        'fab fa-instagram'
+      ]
     };
   }
 };
@@ -40,6 +61,7 @@ export default {
   left: 0;
   min-width: 1920px;
   min-height: 300px;
+  height: 100%;
 }
 
 .shield {
