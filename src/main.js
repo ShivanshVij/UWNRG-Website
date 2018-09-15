@@ -7,18 +7,17 @@ import router from "./router";
 Vue.config.productionTip = false;
 
 import '@fortawesome/fontawesome-free/css/all.css'
+import "buefy/lib/buefy.css";
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import Buefy from "buefy";
-import "buefy/lib/buefy.css";
-import 'nx-card/dist/nx-card.css';
 import Vuetify from 'vuetify';
-import NxCard from 'nx-card';
+import BootstrapVue from 'bootstrap-vue'
 
-Vue.use(NxCard);
+Vue.use(BootstrapVue);
+Vue.use(Vuetify, {iconfont: 'fa'});
 Vue.use(Buefy);
-Vue.use(Vuetify, {
-  iconfont: 'fa'
- });
 
 let app;
 app = new Vue({
